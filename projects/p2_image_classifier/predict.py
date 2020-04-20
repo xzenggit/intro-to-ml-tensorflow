@@ -52,6 +52,6 @@ if __name__=="__main__":
     classes = np.argsort(p)[-top_k:]
     
     print(p.numpy()[classes])
-    strclasses = [str(x) for x in classes]
+    strclasses = [str(x+1) for x in classes]
     print(strclasses)
     print([class_names[x] for x in strclasses])
